@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:interface xsi:type="con:RestService" id="46dab3d7-b325-4d32-a13d-50fa9d9c30e3" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://oneself-api-test.optisolbusiness.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="46dab3d7-b325-4d32-a13d-50fa9d9c30e3fileName">https%3A%2F%2Foneself-api-test.optisolbusiness.com</con:setting>
+  </con:settings>
+  <con:definitionCache type="TEXT" rootPart=""/>
+  <con:endpoints>
+    <con:endpoint>https://oneself-api-test.optisolbusiness.com</con:endpoint>
+  </con:endpoints>
+</con:interface>

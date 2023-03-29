@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="66bedd09-1ac3-4193-b79f-e0dbbeaa6b52" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="https://oneself-api-test.optisolbusiness.com Test Case 1" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="66bedd09-1ac3-4193-b79f-e0dbbeaa6b52fileName">https%3A%2F%2Foneself-api-test.optisolbusiness.com-Test-Case-1</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="Request 1" id="5624aed8-43a1-40ed-9d92-9016b5815578">
+    <con:settings/>
+    <con:config service="https://oneself-api-test.optisolbusiness.com" resourcePath="/api/common/country_list" methodName="Country_list" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="Request 1" id="1b3944f9-129a-4c4b-80b6-0c76e4d7e677" mediaType="application/json">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>https://oneself-api-test.optisolbusiness.com</con:endpoint>
+        <con:request/>
+        <con:originalUri>https://oneself-api-test.optisolbusiness.com/api/common/country_list</con:originalUri>
+        <con:assertion type="Response SLA Assertion" id="adba7b81-e90d-40cf-9dbe-50db0e7f603b" name="Response SLA">
+          <con:configuration>
+            <SLA>200</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters/>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

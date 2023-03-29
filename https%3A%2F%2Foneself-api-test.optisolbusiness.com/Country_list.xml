@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="Country_list" path="/api/common/country_list" id="83e5d5e0-9360-4526-a147-2dac76510d8d" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="83e5d5e0-9360-4526-a147-2dac76510d8dfileName">Country_list</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="Country_list" id="d3d95972-948c-43e0-8b70-b101d0c8f267" method="GET">
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json; charset=utf-8</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:element xmlns:coun="https://oneself-api-test.optisolbusiness.com/api/common/country_list">coun:Response</con:element>
+    </con:representation>
+    <con:request name="Request 1" id="1b3944f9-129a-4c4b-80b6-0c76e4d7e677" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://oneself-api-test.optisolbusiness.com</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

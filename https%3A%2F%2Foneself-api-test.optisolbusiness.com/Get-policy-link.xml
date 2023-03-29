@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="get-policy-link" path="/common/get-policy-link" id="b36ec4e9-6b52-419e-a4ed-a21926ea44ea" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="b36ec4e9-6b52-419e-a4ed-a21926ea44eafileName">get-policy-link</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="Method 1" id="d0102225-1812-4327-a6ab-51586c503902" method="GET">
+    <con:settings/>
+    <con:parameters/>
+    <con:request name="Request 1" id="22c841c1-c179-4603-9a62-8fb3bb7d3c77" mediaType="application/json">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:endpoint>https://oneself-api-test.optisolbusiness.com</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

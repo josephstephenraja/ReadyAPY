@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testSuite id="eaa8902c-066c-42e0-9e4a-775f6553b4b0" name="https://oneself-api-test.optisolbusiness.com Test Suite" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="eaa8902c-066c-42e0-9e4a-775f6553b4b0fileName">https%3A%2F%2Foneself-api-test.optisolbusiness.com-Test-Suite</con:setting>
+  </con:settings>
+  <con:runType>SEQUENTIAL</con:runType>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testSuite>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="f995c7cc-056c-4fe6-a847-5ce0fb308754" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="https://oneself-api-test.optisolbusiness.com Test Case 1" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="IncludeOverview">true</con:setting>
+    <con:setting id="IncludeResults">true</con:setting>
+    <con:setting id="FlowLayout">false</con:setting>
+    <con:setting id="ErrorDetails">true</con:setting>
+    <con:setting id="IncludeCoverage">true</con:setting>
+    <con:setting id="GeneratableAllureReport@Folder">C:\Users\josephstephenraja.p\OneDrive - Optisol Business Solutions Private Limited\Desktop\Doc for the day</con:setting>
+    <con:setting id="f995c7cc-056c-4fe6-a847-5ce0fb308754fileName">https%3A%2F%2Foneself-api-test.optisolbusiness.com-Test-Case-1</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="Request 1" id="be944429-8f09-44bd-b461-073a7e959d3d">
+    <con:settings/>
+    <con:config service="https://oneself-api-test.optisolbusiness.com" resourcePath="/api/common/get-policy-link" methodName="Get-policy-link" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="Request 1" id="cdb4cb9d-3f86-4161-aa2d-d58bf18e1b89" mediaType="application/json">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>https://oneself-api-test.optisolbusiness.com</con:endpoint>
+        <con:request/>
+        <con:originalUri>https://oneself-api-test.optisolbusiness.com/api/common/get-policy-link</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="b17e35c5-a906-43dd-b36f-c1b560190bef" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="JsonPath Match" id="c780adf1-a98e-42ba-9903-5ce22dd1318a" name="Match content of [url]">
+          <con:configuration>
+            <path>$['result'][0]['url']</path>
+            <content>"https://oneself-admin-test.optisolbusiness.com/privacy-policy"</content>
+            <allowWildcards>false</allowWildcards>
+            <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+            <ignoreComments>false</ignoreComments>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters/>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="REST Request" id="fa23dcfc-c178-4950-bd4d-1f78b405a035">
+    <con:settings/>
+    <con:config service="https://oneself-api-test.optisolbusiness.com" methodName="Country_list" resourcePath="/api/common/country_list" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="REST Request" id="ce328bef-d313-4ae0-a376-07bc4c5f0130" mediaType="application/json">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>https://oneself-api-test.optisolbusiness.com</con:endpoint>
+        <con:request/>
+        <con:originalUri>https://oneself-api-test.optisolbusiness.com/api/common/country_list</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="7870a53d-675c-4fea-9205-d114561d2a2c" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Response SLA Assertion" id="15357f7c-e12b-426f-be29-ef2711d16427" name="Response SLA">
+          <con:configuration>
+            <SLA>200</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters/>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>
